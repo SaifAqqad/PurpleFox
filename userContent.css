@@ -1,0 +1,206 @@
+/*
+
+Private Browsing 
+(this /has/ to be above common browsing for some dumb reason)
+
+*/
+@-moz-document url(about:privatebrowsing) {
+
+
+
+  /* Gets rid of search bar in private browsing mode */
+  html.private div.showPrivate div.search-inner-wrapper, html.private div.showPrivate div.info {
+      display: none !important;
+  }
+  
+  
+  
+  /* Hides the "You're in private browsing mode" dialog */
+  .info {
+      display: none !important;
+  }
+  
+  
+  
+  /* Changes the logo on the private browsing home screen */
+  html.private .logo {
+    background-image: url("firefox_halo_with_paw_private.png") !important;
+    font-family: Google Sans !important;
+  }
+  
+  
+
+  /* Changes the color of the wordmark */
+  .wordmark {
+    fill: #6F3C89 !important;
+    font-family: Google Sans !important;
+  }
+  
+  
+  
+  /* Centers logo and wordmark */
+  .logo-and-wordmark {
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 49px !important;
+    font-family: Google Sans !important;
+  }
+  
+  
+  
+  /* Changes the home screen color */
+  html.private {
+      --in-content-page-background: #0a0e14 !important;}
+  
+  }
+  
+  
+  
+  /*
+  
+  Common Browsing
+  
+  */
+  @-moz-document url(about:newtab), url(about:home), url(about:preferences), url(about:blank) { 
+  /* removes new tab search bar logo */
+  .search-wrapper input {
+    --newtab-search-icon: transparent  !important;
+    padding-left: 20px !important;
+  }
+
+
+
+  /* Makes the search bar on the home screen round with red text and a red border when not clicked */
+  #newtab-search-text,
+    #searchSubmit{
+      fill: #6F3C89 !important;
+      border-radius: 48px !important;
+      border-color: #6F3C89 !important;
+      box-shadow: none !important;
+      background-color: none !important;
+      color: none !important;
+      font-family: Google Sans !important
+    }
+    
+  
+  
+  /* Changes the color of the glow when you click the search bar on the home screen */
+  .search-wrapper .search-inner-wrapper:active input, .search-wrapper input:focus {
+    border: 3px solid #6F3C89 !important;
+    box-shadow: 0 0 7px #993d3d !important;
+    }
+  
+  
+  /* Changes the background color inside of the search bar */
+  #newtab-search-text{
+    background-color: #0A0E14 !important;
+    color: #6F3C89 !important;
+  }
+  
+  
+  
+  /* Changes the gear color and removes the hover */
+  .prefs-button button {fill: #6F3C89 !important;}
+  
+  .prefs-button button:hover, .prefs-button button:focus {
+      background-color:  transparent !important; }	
+   
+  
+  
+  /* Turns of search suggestions on the home screen */
+  .contentSearchSuggestionTable {display: none !important;}
+  
+  
+  
+  /* Changes the home screen color */
+  body{ background-color: #191426 !important }
+  
+  
+  
+  /* Centers logo and wordmark */
+  .search-wrapper .logo-and-wordmark {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 49px; }
+  
+  
+  
+  
+  /* Makes it so that no border appears around the search arrow */
+  .search-wrapper .search-button:focus, .search-wrapper .search-button:hover {
+        background-color: transparent !important;
+        cursor: pointer !important; }
+  .search-wrapper .search-button:active {
+        background-color: transparent !important; }
+  
+  
+  /* Changes the logo on the home screen*/
+  .logo {background-image: url("firefox_halo_with_paw_private_favicon.png") !important;}
+  
+  
+  
+  /* Changes the color of the wordmark */
+  .wordmark { fill: #6F3C89 !important;}
+  }
+  
+  
+  
+  /* Makes the search bar on the home screen round with red text and a red border when not clicked */
+  #newtab-search-text,
+    #searchSubmit{
+      fill: #6F3C89 !important;
+      border-radius: 48px !important;
+      border-color: #6F3C89 !important;
+      box-shadow: none !important;
+      background-color: none !important;
+      color: none !important;
+      font-family: helvetica !important
+    }
+  
+  
+  
+  /* Changes the color of the glow when you click the search bar on the home screen */
+  .search-wrapper .search-inner-wrapper:active input, .search-wrapper input:focus {
+    border: 3px solid #6F3C89 !important;
+    box-shadow: 0 0 7px #6F3C89 !important;
+    }
+  
+  
+  
+  /* Changes the background color inside of the search bar */
+  #newtab-search-text{
+    background-color: #191426 !important;
+    color: #6F3C89 !important;
+    font-family: Google Sans !important;
+  }
+  
+  
+  
+  /* Turns of search suggestions on the home screen */
+  .contentSearchSuggestionTable {display: none !important;}
+  
+  
+  
+  /* Centers logo and wordmark */
+  .search-wrapper .logo-and-wordmark {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 49px; }
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
