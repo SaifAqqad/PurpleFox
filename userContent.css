@@ -69,7 +69,12 @@ Private Browsing
     padding-left: 20px !important;
   }
 
-
+  .personalize-button{
+    background-color: #32284C !important;
+  }
+  .sticky-container{
+    background-color: #191426 !important;
+  }
 
   /* Makes the search bar on the home screen round with red text and a red border when not clicked */
   #newtab-search-text,

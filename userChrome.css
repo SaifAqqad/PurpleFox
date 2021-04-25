@@ -321,3 +321,43 @@ menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 }
 
 /* ENDBLOCK */
+/*================== CAPTION BUTTONS ==================*/
+.titlebar-buttonbox {
+    position: relative;
+    margin-right: -8px;
+	margin-top: -5px !important;
+}
+.titlebar-button {
+	transition: all 0.3s ease !important;
+	padding: 8px 10px !important;
+    background: rgb(18, 15, 28) !important;
+}
+.titlebar-button.titlebar-close {
+	padding-right: 26px !important;
+}
+.titlebar-button > .toolbarbutton-icon {
+	transition: all 0.3s ease !important;
+	list-style-image: none;
+	border-radius: 10px;
+}
+
+.titlebar-button.titlebar-min > .toolbarbutton-icon {
+	background: rgb(111, 60, 137) !important;
+}
+.titlebar-button.titlebar-max > .toolbarbutton-icon,
+.titlebar-button.titlebar-restore > .toolbarbutton-icon {
+	background: rgb(111, 60, 137) !important;
+}
+.titlebar-button.titlebar-close > .toolbarbutton-icon {
+    background: rgb(111, 60, 137) !important;
+}
+
+.titlebar-button:hover > .toolbarbutton-icon {
+	background: rgb(69, 37, 85) !important;
+}
+.titlebar-button.titlebar-min:hover > .toolbarbutton-icon,
+.titlebar-button.titlebar-max:hover > .toolbarbutton-icon,
+.titlebar-button.titlebar-restore:hover > .toolbarbutton-icon,
+.titlebar-button.titlebar-close:hover > .toolbarbutton-icon {
+	
+}
