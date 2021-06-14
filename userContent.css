@@ -70,7 +70,7 @@ Private Browsing
   }
 
   .personalize-button{
-    background-color: #32284C !important;
+    display: none !important;
   }
   .sticky-container{
     background-color: #191426 !important;
@@ -78,7 +78,7 @@ Private Browsing
 
   /* Makes the search bar on the home screen round with red text and a red border when not clicked */
   #newtab-search-text,
-    #searchSubmit{
+  #searchSubmit{
       fill: #6F3C89 !important;
       border-radius: 48px !important;
       border-color: #6F3C89 !important;
@@ -86,24 +86,21 @@ Private Browsing
       background-color: none !important;
       color: none !important;
       font-family: Google Sans !important
-    }
+  }
     
   
-  
-  /* Changes the color of the glow when you click the search bar on the home screen */
-  .search-wrapper .search-inner-wrapper:active input, .search-wrapper input:focus {
-    border: 3px solid #6F3C89 !important;
-    box-shadow: 0 0 7px #993d3d !important;
-    }
-  
-  
   /* Changes the background color inside of the search bar */
-  #newtab-search-text{
-    background-color: #0A0E14 !important;
+  #newtab-search-text,.outer-wrapper.newtab-experience .search-wrapper .search-handoff-button, .outer-wrapper.newtab-experience .search-wrapper input{
+    background-color: #120F1C !important;
     color: #6F3C89 !important;
   }
-  
-  
+
+  /* Changes the color of the glow when you click the search bar on the home screen */
+  .outer-wrapper.newtab-experience .search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button{
+    border: 1px solid #6F3C89 !important;
+    box-shadow: 0 0 0 2px #6F3C89 !important;
+
+  }
   
   /* Changes the gear color and removes the hover */
   .prefs-button button {fill: #6F3C89 !important;}
