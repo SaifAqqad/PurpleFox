@@ -273,11 +273,15 @@ tab
 }
 
 /* Changes the color of the right-click menu*/
-#toolbar-context-menu,#tabContextMenu,#contentAreaContextMenu,#back-button>menupopup,#forward-button>menupopup,#backForwardMenu,#placesContext,#viewButton>menupopup,#pageActionContextMenu,#toolbar-context-menu menupopup,#tabContextMenu menupopup,#contentAreaContextMenu menupopup,#back-button>menupopup menupopup,#forward-button>menupopup menupopup,#backForwardMenu menupopup,#toolbar-context-menu menupopup,#placesContext menupopup,#viewButton>menupopup menupopup,#pageActionContextMenu menupopup {
+#toolbar-context-menu,.menupopup-arrowscrollbox,#tabContextMenu,#contentAreaContextMenu,#back-button>menupopup,#forward-button>menupopup,#backForwardMenu,#placesContext,#viewButton>menupopup,#pageActionContextMenu,#toolbar-context-menu menupopup,#tabContextMenu menupopup,#contentAreaContextMenu menupopup,#back-button>menupopup menupopup,#forward-button>menupopup menupopup,#backForwardMenu menupopup,#toolbar-context-menu menupopup,#placesContext menupopup,#viewButton>menupopup menupopup,#pageActionContextMenu menupopup {
   -moz-appearance: none !important;
   background-color: #181427 !important;
   border: 1px #0a0e14 solid !important;
   margin: 1px 0 0 0 !important;
+}
+
+.menupopup-arrowscrollbox{
+	padding-left: 5px !important;
 }
 
 #toolbar-context-menu menuseparator,#tabContextMenu menuseparator,#contentAreaContextMenu menuseparator,#back-button>menupopup menuseparator,#forward-button>menupopup menuseparator,#backForwardMenu menuseparator,#toolbar-context-menu menuseparator,#placesContext menuseparator,#viewButton>menupopup menuseparator,#pageActionContextMenu menuseparator {  -moz-appearance: none !important;
